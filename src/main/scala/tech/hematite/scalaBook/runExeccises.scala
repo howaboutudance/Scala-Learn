@@ -1,6 +1,7 @@
 package tech.hematite.scalaBook
 
 import tech.hematite.scalaBook.CheckSumAccumulator
+import tech.hematite.scalaBook.Chapter5._
 
 object RunExcercises extends App {
 
@@ -18,15 +19,6 @@ object RunExcercises extends App {
     println("Chapter 4 complete!")
 
     // Chapter 5
-    // String & Character Literals
-    val a = 'A'
-    println(a.getClass())
-
-    val block = '\u25A4'
-    println(block)
-    println(block.getClass())
-
-    // string literals like emoji
-    println("👨🏿‍💻")
-    println("Chapter 5 complete!")
+   runChapter5()
+   println("Chapter 5 complete")
 }
