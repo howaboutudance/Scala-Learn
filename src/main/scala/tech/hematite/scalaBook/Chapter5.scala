@@ -3,6 +3,7 @@ package tech.hematite.scalaBook
 object Chapter5 {
     private val strDecimal = 1.0
     private val strExample = "StrDecimal"
+
     def runChapter5(): Unit = {
         // String & Character Literals
         characterLiterals()
@@ -11,6 +12,7 @@ object Chapter5 {
 
         // operator eqilvancy  that foo.bar(0) is equiv to foo bar 0
         operatorEquilvancy()
+        implictConversion()
     }
 
     private def characterLiterals(): Unit = {
@@ -50,5 +52,23 @@ object Chapter5 {
         if((valArray indexOf 3) >= 0 ){
             println(s"index found in op notation: ${valArray indexOf 3}")
         }
+    }
+
+    private def implictConversion(): Unit = {
+        println(0 max 5)
+        println(0 min 5)
+        println("bob".capitalize)
+
+        println(4 to 6)
+
+        // rich wrappers
+        // each base type has a corresponding documentation of a rich wrapper
+
+        //contains for stringops
+        if(strExample contains 'c'){
+            println("found c")
+        }
+
+        
     }
 }
