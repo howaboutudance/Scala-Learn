@@ -2,6 +2,7 @@ package tech.hematite.scalaBook
 
 import tech.hematite.scalaBook.CheckSumAccumulator
 import tech.hematite.scalaBook.Chapter5._
+import tech.hematite.scalaBook.Chapter6._
 
 object RunExcercises extends App {
 
@@ -21,4 +22,8 @@ object RunExcercises extends App {
     // Chapter 5
    runChapter5()
    println("Chapter 5 complete")
+
+   // Chapter 6
+   runChapter6()
+   println("Chapter 6 complete")
 }
